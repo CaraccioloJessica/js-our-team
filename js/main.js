@@ -55,6 +55,12 @@ for (let i = 0; i < team.length; i++){
   let container = document.getElementById('container');
   let card = document.createElement('div');
   card.classList.add('card');
-  card.innerHTML = `${teamMember.nome} ${teamMember.ruolo} ${teamMember.foto}`
+
+  // BONUS 1, trsformare stringa img in immagine effettiva
+  let img = document.createElement('img');
+  img.src = `img/${teamMember.foto}`;
+
+  card.innerHTML = `${teamMember.nome} ${teamMember.ruolo}`
   container.append(card);
+  card.appendChild(img);
 }
