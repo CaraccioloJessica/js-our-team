@@ -48,8 +48,12 @@ const team = [
 // Stampare in console dettagli per ogni membro del team
 for (let i = 0; i < team.length; i++){
   let teamMember = team[i];
-  console.log(teamMember.nome, teamMember.ruolo, teamMember.foto);
-}
+  // console.log(teamMember.nome, teamMember.ruolo, teamMember.foto);
 
-// MILESTONE 2
-// Stampare su DOM
+  // MILESTONE 2
+  // Stampare su DOM, creare div che conterranno oggetti e collegare al contenitore
+  let container = document.getElementById('container');
+  let card = document.createElement('div');
+  card.innerHTML = `${teamMember.nome} ${teamMember.ruolo} ${teamMember.foto}`
+  container.append(card);
+}
