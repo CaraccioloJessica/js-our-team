@@ -63,9 +63,9 @@ for (let i = 0; i < team.length; i++){
   img.src = `img/${teamMember.foto}`;
 
   descrizione.innerHTML = `
-  <h4>${teamMember.nome}</h4> 
+  <h4 style="font-family:lucida bright;">${teamMember.nome}</h4> 
   <p>${teamMember.ruolo}</p>`
-  
+
   // Collegamenti 
   container.append(card);
   card.appendChild(img);
