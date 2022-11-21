@@ -50,3 +50,6 @@ for (let i = 0; i < team.length; i++){
   let teamMember = team[i];
   console.log(teamMember.nome, teamMember.ruolo, teamMember.foto);
 }
+
+// MILESTONE 2
+// Stampare su DOM

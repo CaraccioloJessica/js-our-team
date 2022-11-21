@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F5F1;
+}
+
+/* HEADER */
+#up-container{
+  text-align: center;
+  width: 35%;
+  margin: 30px auto;
+  color: #363636;
+  font-size: 0.8rem;
+}
+
+h1{
+  margin-bottom: 20px;
+}
+
+#up-container p{
+  line-height: 2;
+}
+
+/* MAIN */
+#container{
+  width: 70%;
+  margin: auto;
+}
