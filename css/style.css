@@ -30,4 +30,13 @@ h1{
 #container{
   width: 70%;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: calc(100% / 3 - 20px);
+  height: 300px;
+  margin: 10px;
+  background-color: #fff;
 }

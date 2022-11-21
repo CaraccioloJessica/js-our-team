@@ -54,6 +54,7 @@ for (let i = 0; i < team.length; i++){
   // Stampare su DOM, creare div che conterranno oggetti e collegare al contenitore
   let container = document.getElementById('container');
   let card = document.createElement('div');
+  card.classList.add('card');
   card.innerHTML = `${teamMember.nome} ${teamMember.ruolo} ${teamMember.foto}`
   container.append(card);
 }
