@@ -50,17 +50,24 @@ for (let i = 0; i < team.length; i++){
   let teamMember = team[i];
   // console.log(teamMember.nome, teamMember.ruolo, teamMember.foto);
 
-  // MILESTONE 2
+  // MILESTONE 2 e BONUS 2
   // Stampare su DOM, creare div che conterranno oggetti e collegare al contenitore
   let container = document.getElementById('container');
   let card = document.createElement('div');
   card.classList.add('card');
+  let descrizione = document.createElement('div')
+  descrizione.classList.add('description');
 
   // BONUS 1, trsformare stringa img in immagine effettiva
   let img = document.createElement('img');
   img.src = `img/${teamMember.foto}`;
 
-  card.innerHTML = `${teamMember.nome} ${teamMember.ruolo}`
+  descrizione.innerHTML = `
+  <h4>${teamMember.nome}</h4> 
+  <p>${teamMember.ruolo}</p>`
+  
+  // Collegamenti 
   container.append(card);
   card.appendChild(img);
+  card.appendChild(descrizione);
 }

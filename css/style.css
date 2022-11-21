@@ -14,11 +14,12 @@ body{
   text-align: center;
   width: 35%;
   margin: 30px auto;
-  color: #363636;
+  color: #646463;
   font-size: 0.8rem;
 }
 
 h1{
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -35,13 +36,25 @@ h1{
 }
 
 .card{
-  width: calc(100% / 3 - 40px);
-  margin: 20px;
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
   background-color: #fff;
 }
 
 .card img{
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
+
+.description{
+  color: #79736d;
+  text-align: center;
+  padding: 20px;
+}
+
+.description p{
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+  
